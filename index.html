@@ -1,0 +1,102 @@
+<!Doctype>
+<html>
+
+<head>
+    <title>Train Activity</title>
+
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+    <!--Moment.js link-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Anytime is Train Time</h1>
+            <p>Train Schedule.</p>
+        </div>
+
+        <!--First Panel-->
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Train Schedule</h3>
+            </div>
+            <div class="panel-body">
+
+
+                <!-- Table -->
+                <table class="table">
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min.)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+
+                        <!--Inputs <spans>-->
+                        <!--<td><span id="trainName"></span></td>-->
+                        <!--<td><span id="destination"></span></td>-->
+                        <!--<td><span id="frequency"></span></td>-->
+                        <!--<td><span id="nextArrival"></span></td>-->
+                        <!--<td><span id="minutesAway"></span></td>-->
+
+            </div>
+            </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+    <!--Second Panel - Add Train-->
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">Add Train</h3>
+        </div>
+
+        <div class="panel-body">
+
+            <p>Train Name</p>
+            <input id="inputTrainName" type="text" name="">
+            <br><br>
+
+            <p>Destination</p>
+            <input id="inputDestination" type="text" name="">
+            <br><br>
+
+            <p>First Train Time (HH:mm - military time)</p>
+            <input id="inputFirstTrain" type="text" name="">
+            <br><br>
+
+            <p>Frequency (min.)</p>
+            <input id="inputFrequency" type="text" name="">
+            <br><br>
+
+            <button class="btn btn-primary" id="submitButton">Submit</button>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

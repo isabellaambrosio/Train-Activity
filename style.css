@@ -1,0 +1,37 @@
+body {
+    color: grey;
+    background-image: url("background.jpg");
+}
+
+input {
+    width: 100%;
+}
+
+.jumbotron {
+    background-color: #7f7f7f;
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.panel-heading {
+    background-color: #7f7f7f;
+    color: white;
+}
+
+.panel {
+    border: 1px solid #7f7f7f;
+    color: darkgrey;
+}
+
+
+
+#submitButton {
+    background-color: #626065;
+    border: 1px solid #626065;
+}
+
+.panel-body {
+
+    color: grey;
+}
